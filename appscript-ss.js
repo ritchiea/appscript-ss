@@ -36,7 +36,7 @@ function getLastRow() {
   var rows = ss.getSheets()[0].getRange('A1:A100');
   var values = rows.getValues();
   
-  for (i=99; i >= 0; i--) {
+  for (var i = 99; i >= 0; i--) {
     
     if (values[i] != ""){
       var lastrow = i+1;
